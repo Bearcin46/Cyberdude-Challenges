@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--------------------tailwindcss------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---------------------confetti animation------------>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <title>Array-Loop</title>
+  </head>
+  <body class="bg-[#003566] mx-auto">
+    <!--------------------display-output---------------->
+    <div class="flex items-center justify-center">
+      <div
+        id="output-div"
+        class="w-[85%] md:w-[50%] border-2 border-amber-400 shadow-lg shadow-white mt-14"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <p class="text-center mt-8 text-white">Woohoo! You are in🎉🎉!</p>
+          <img
+            src=""
+            alt="image"
+            class="hidden rounded-full h-[150px] mt-6"
+            id="myImg"
+          />
+        </div>
+        <!--------------------------------main heading--------------------------------->
+        <h1
+          id="name-display"
+          class="text-center text-white text-3xl sm:text-5xl font-bold mt-4"
+        >
+          Let's Go 🚀
+        </h1>
+        <!----------------------------------3 buttons--------------------------------->
+        <div class="flex items-center justify-center gap-3 mt-6 mb-4">
+          <button
+            id="completed-btn"
+            class="hidden px-2 sm:px-3 md:px-8 py-1 bg-[#16a34a] rounded-lg text-white sm:text-xl hover:bg-green-700"
+          >
+            ✅ Completed
+          </button>
+          <button
+            id="absent-btn"
+            class="hidden px-2 sm:px-3 md:px-8 py-1 bg-red-600 rounded-lg text-white sm:text-xl hover:bg-red-700"
+          >
+            ❌ Absent
+          </button>
+          <button
+            id="pending-btn"
+            class="hidden px-2 sm:px-3 md:px-8 py-1 bg-amber-400 rounded-lg text-white sm:text-xl hover:bg-amber-600"
+          >
+            ❎ Pending
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-------------------generate names----------------->
+    <div class="flex items-center justify-center mt-6">
+      <button
+        id="generate"
+        class="w-[85%] sm:w-[50%] text-white font-bold p-4 bg-[#D95C59] text-xl mb-3 rounded-lg hover:bg-red-700"
+      >
+        Generate
+      </button>
+    </div>
+    <!-------------------absent & pending list----------->
+    <div
+      class="flex flex-col sm:flex sm:flex-row gap-1 sm:gap-3 sm:gap-6 items-center sm:items-end justify-center sm:bottom-1 sm:absolute left-0 right-0"
+      id="incompleted "
+    >
+      <!--------------------absent---------------------->
+      <div class="px-9 py-1.5 bg-white rounded-md w-[85%] sm:w-auto">
+        <h4 class="font-bold text-center sm:text-start">Absentees</h4>
+        <ul id="absent-list"></ul>
+      </div>
+      <!--------------------pending--------------------->
+      <div class="px-8 py-1.5 bg-white rounded-md w-[85%] sm:w-auto">
+        <h4 class="font-bold text-center sm:text-start">Pending</h4>
+        <ul id="pending-list"></ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
