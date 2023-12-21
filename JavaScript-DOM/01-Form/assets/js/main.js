@@ -8,6 +8,7 @@ const formDiv = document.getElementById("formData");
 
 const handleSubmit = (event) => {
   event.preventDefault();
+
   if (termsEl.checked) {
     //send to backend
     const formData = [...new FormData(formEl)];
@@ -49,13 +50,6 @@ returnEl.addEventListener("click", () => {
   confirmationDiv.classList.add("hidden");
   formDiv.classList.remove("hidden");
   const formDataEl = document.getElementsByName("formData");
-  formDataEl.elements.reset();
+  console.log(formDataEl);
+  formDataEl[0].reset();
 });
-
-// const validateEmail = (email) => {
-//   return string(email)
-//     .LowerCase()
-//     .match(
-//       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//     );
-// };

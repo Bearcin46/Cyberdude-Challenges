@@ -4,4 +4,5 @@ export default defineConfig({
   build: {
     assetsDir: "assets",
   },
+  base: "./",
 });

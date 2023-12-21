@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BS Group of Schools | Admission</title>
-    <link
-      rel="icon"
-      href="./assets/logo-291kqZA5.jpeg"
-      type="image/icon type"
-    />
-    <!----------------------------------------CSS----------------------------------------------->
-
+    <link rel="icon" href="./assets/logo-291kqZA5.jpeg" type="image/icon type" />
+    <!----------------------------------------CSS----------------------------------------------->
     <!----------------------------------------GOOGLE FONTS--------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" crossorigin href="./assets/index-Ka9LpxTG.css" />
+    <script type="module" crossorigin src="./assets/index-xnNdwV28.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Pg9S_Cn4.css">
   </head>
   <body
     class="max-w-xxl mx-auto px-5 py-5 bg-hero-pattern bg-cover font-roboto"
@@ -46,18 +41,27 @@
           </h3>
           <p class="text-white text-[15px] mt-2">
             General Line :
-            <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
-            Whatsapp : <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            Whatsapp :
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
             Admission-Line :
-            <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
             Email :
-            <a href="mailto:abcd@xyz.com">admission@abcd.com</a>
+            <a href="mailto:abcd@xyz.com" class="hover:text-blue-300"
+              >admission@abcd.com</a
+            >
           </p>
         </div>
         <!----------------------------XYZ SCHOOL---------------------------------->
@@ -67,18 +71,27 @@
           </h3>
           <p class="text-white text-[15px] mt-2">
             General Line :
-            <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
-            Whatsapp : <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            Whatsapp :
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
             Admission-Line :
-            <a href="tel:+91-999 9999 999">+91- 88844447862</a>
+            <a href="tel:+91-999 9999 999" class="hover:text-blue-300"
+              >+91- 88844447862</a
+            >
           </p>
           <p class="text-white text-[15px]">
             Email :
-            <a href="mailto:abcd@xyz.com">admission@xyz.com</a>
+            <a href="mailto:abcd@xyz.com" class="hover:text-blue-300"
+              >admission@xyz.com</a
+            >
           </p>
         </div>
       </section>
@@ -99,6 +112,8 @@
               id="firstName"
               class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
+              required
+              title="Please enter First Name"
             />
           </div>
           <div class="flex flex-col gap-5">
@@ -116,6 +131,8 @@
               id="lastName"
               class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
+              required
+              title="Please enter Last Name or Initial"
             />
           </div>
         </div>
@@ -130,8 +147,15 @@
               id="campus"
               class="bg-[#d8d8d8] py-1 px-3 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
               required
+              required
+              title="Please choose the campus"
             >
-              <option value="" class="text-[#7600ffbf] font-bold">
+              <option
+                value=""
+                class="text-[#480a8ebf] font-bold"
+                disabled
+                selected
+              >
                 Select your Campus
               </option>
               <option value="abcd-school" class="text-[#7600ffbf]">
@@ -146,14 +170,21 @@
             <label for="email" class="text-white text-bold text-lg"
               >Email</label
             >
-            <input
-              type="email"
-              placeholder="Enter mail address"
-              id="email"
-              name="email"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
-              required
-            />
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Enter mail address"
+                id="email"
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address"
+                class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
+              />
+              <p class="text-sm text-red-900 ms-2 hidden" id="emailError">
+                Enter correct Mail Address!
+              </p>
+            </div>
           </div>
         </div>
         <!----------------------mobile----------------------->
@@ -175,8 +206,10 @@
               id="phone"
               name="phone"
               placeholder="Enter Mobile Number"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
+              title="Please enter Mobile Number"
+              pattern="[789][0-9]{9}"
+              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
             />
           </div>
         </div>
@@ -191,7 +224,12 @@
             class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
           >
-            <option value="" class="text-[#7600ffbf] font-bold">
+            <option
+              value=""
+              class="text-[#480a8ebf] font-bold"
+              disabled
+              selected
+            >
               Share your thoughts
             </option>
             <option value="social-media" class="text-[#7600ffbf]">
@@ -210,10 +248,16 @@
           <select
             name="spreadOfNews"
             id="spreadOfNews"
-            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
+            title="Please choose the curriculum"
+            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
           >
-            <option value="" class="text-[#7600ffbf] font-bold">
+            <option
+              value=""
+              class="text-[#480a8ebf] font-bold"
+              disabled
+              selected
+            >
               Select Curriculum
             </option>
             <option value="social-media" class="text-[#7600ffbf]">
@@ -234,8 +278,14 @@
             id="childInfo"
             class="w-[75%] mt-3 bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
+            title="Please select number of children"
           >
-            <option value="" class="text-[#7600ffbf] font-bold">
+            <option
+              value=""
+              class="text-[#480a8ebf] font-bold"
+              disabled
+              selected
+            >
               Please select one
             </option>
             <option value="1" class="text-[#7600ffbf]">1</option>
@@ -252,7 +302,7 @@
             id="message"
             cols="20"
             rows="3"
-            placeholder="Enter your queries"
+            placeholder="Enter your queries (Optional)"
             class="mt-3 w-[75%] px-3 py-2 rounded bg-[#d8d8d8] outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
           ></textarea>
         </div>
@@ -302,7 +352,6 @@
           </button>
         </div>
       </div>
-    </div>
-    <script type="module" crossorigin src="./assets/index-srHhMEvp.js"></script>
+    </div>
   </body>
 </html>
