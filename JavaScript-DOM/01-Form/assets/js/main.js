@@ -12,7 +12,8 @@ const handleSubmit = (event) => {
   if (termsEl.checked) {
     //send to backend
     const formData = [...new FormData(formEl)];
-    const jsonData = Object.fromEntries(formData); // const jsonData = JSON.stringify(Object.fromEntries(formData));
+    const jsonData = Object.fromEntries(formData);
+    localStorage.setItem("Details", jsonData); // const jsonData = JSON.stringify(Object.fromEntries(formData));
     // console.log("JSON BODY:", jsonData);
     handleConfirmation(jsonData);
   } else if (!termsEl.checked) {
