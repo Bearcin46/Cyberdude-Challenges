@@ -19,7 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="./assets/index-uBdKPLH3.css" />
+    <script type="module" crossorigin src="/assets/index-srHhMEvp.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Ka9LpxTG.css" />
   </head>
   <body
     class="max-w-xxl mx-auto px-5 py-5 bg-hero-pattern bg-cover font-roboto"
@@ -97,7 +98,7 @@
               placeholder="Enter your First Name"
               name="firstName"
               id="firstName"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
             />
           </div>
@@ -114,7 +115,7 @@
               placeholder="Enter your Last Name"
               name="lastName"
               id="lastName"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
             />
           </div>
@@ -122,16 +123,13 @@
         <!-----------------Campus & Email-------------->
         <div class="flex items-center gap-10 mt-5">
           <div class="flex flex-col gap-5">
-            <label
-              for="campus"
-              placeholder="Select your campus"
-              class="text-white text-bold text-lg"
+            <label for="campus" class="text-white text-bold text-lg"
               >Campus</label
             >
             <select
               name="campus"
               id="campus"
-              class="bg-[#d8d8d8] py-1 px-3 rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] py-1 px-3 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
               required
             >
               <option value="" class="text-[#7600ffbf] font-bold">
@@ -154,7 +152,7 @@
               placeholder="Enter mail address"
               id="email"
               name="email"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
             />
           </div>
@@ -166,7 +164,7 @@
             <select
               name="code"
               id="countryCode"
-              class="bg-[#d8d8d8] rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] rounded outline-none focus:ring-2 focus:ring-[#03045e]"
               required
             >
               <option value="MY +60" class="text-[#7600ffbf]">MY +60</option>
@@ -178,7 +176,7 @@
               id="phone"
               name="phone"
               placeholder="Enter Mobile Number"
-              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:outline-[#03045e]"
+              class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               required
             />
           </div>
@@ -191,7 +189,7 @@
           <select
             name="spreadOfNews"
             id="spreadOfNews"
-            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:outline-[#03045e]"
+            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
           >
             <option value="" class="text-[#7600ffbf] font-bold">
@@ -213,7 +211,7 @@
           <select
             name="spreadOfNews"
             id="spreadOfNews"
-            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:outline-[#03045e]"
+            class="w-[75%] mt-3 bg-[#d8d8d8] px-4 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
           >
             <option value="" class="text-[#7600ffbf] font-bold">
@@ -235,7 +233,7 @@
           <select
             name="totalChildren"
             id="childInfo"
-            class="w-[75%] mt-3 bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:outline-[#03045e]"
+            class="w-[75%] mt-3 bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e]"
             required
           >
             <option value="" class="text-[#7600ffbf] font-bold">
@@ -256,7 +254,7 @@
             cols="20"
             rows="3"
             placeholder="Enter your queries"
-            class="mt-3 w-[75%] px-3 py-2 rounded bg-[#d8d8d8] outline-none focus:outline-[#03045e]"
+            class="mt-3 w-[75%] px-3 py-2 rounded bg-[#d8d8d8] outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
           ></textarea>
         </div>
         <!----------------------Terms & condition------------------>
@@ -292,7 +290,8 @@
           <img src="./assets/tick-Tr8pZa6M.png" alt="img" class="w-[60%]" />
         </div>
         <p id="finalMessage" class="text-lg text-white text-center">
-          Your Enquiry is Submitted. Our team will be in touch shortly!
+          Your Enquiry is Submitted. Our team will be in touch shortly
+          <span id="displayEmail"></span>!
         </p>
         <!--------------------------button---------------------------->
         <div class="flex items-center justify-center mt-5">
@@ -305,6 +304,5 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>

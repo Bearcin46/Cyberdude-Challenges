@@ -4,33 +4,45 @@ const termsEl = formEl.elements.terms;
 const confirmationDiv = document.getElementById("confirmation");
 const formDiv = document.getElementById("formData");
 
+/*==================================================Main function "Submit====================================*/
+
 const handleSubmit = (event) => {
   event.preventDefault();
   if (termsEl.checked) {
-    handleConfirmation();
     //send to backend
     const formData = [...new FormData(formEl)];
-    const jsonData = JSON.stringify(Object.fromEntries(formData));
-    console.log("JSON BODY:", jsonData);
-    con;
+    const jsonData = Object.fromEntries(formData); // const jsonData = JSON.stringify(Object.fromEntries(formData));
+    // console.log("JSON BODY:", jsonData);
+    handleConfirmation(jsonData);
   } else if (!termsEl.checked) {
     alert("You forgot to agree with our terms and conditions");
   }
 };
 
+/*====================================================Submit button=========================================*/
+
 formEl.addEventListener("submit", handleSubmit);
-function handleConfirmation() {
+
+/*====================================================Handling the info=========================================*/
+
+function handleConfirmation(data) {
   alert("Thank you for choosing us! Our team will get you back!");
-  confirm();
+  confirm(data);
   confirmationDiv.classList.remove("hidden");
   formDiv.classList.add("hidden");
 }
 
-function confirm() {
-  const nameEl = document.getElementById("firstName").value;
+function confirm(data) {
+  console.log(data);
+  const nameEl = data.firstName;
+  const emailEl = data.email;
   const thanksEl = document.getElementById("thankCustomer");
+  // const displayEmailEl = document.getElementById("displayEmail");
   thanksEl.textContent = `Thank you for trusting us ${nameEl} !`;
+  // displayEmailEl.textContent = `at ${emailEl}`;
 }
+
+/*==================================================Return Home Button=======================================*/
 
 const returnEl = document.getElementById("return");
 returnEl.addEventListener("click", () => {
@@ -39,3 +51,11 @@ returnEl.addEventListener("click", () => {
   const formDataEl = document.getElementsByName("formData");
   formDataEl.elements.reset();
 });
+
+// const validateEmail = (email) => {
+//   return string(email)
+//     .LowerCase()
+//     .match(
+//       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//     );
+// };
