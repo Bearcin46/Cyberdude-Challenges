@@ -4,7 +4,7 @@ const termsEl = formEl.elements.terms;
 const confirmationDiv = document.getElementById("confirmation");
 const formDiv = document.getElementById("formData");
 
-/*==================================================Main function "Submit====================================*/
+/*==================================================Main function "Submit"====================================*/
 
 const handleSubmit = (event) => {
   event.preventDefault();
