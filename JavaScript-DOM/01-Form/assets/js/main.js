@@ -15,7 +15,8 @@ const handleSubmit = (event) => {
     const jsonData = Object.fromEntries(formData);
     const stringifiedData = JSON.stringify(jsonData);
     localStorage.setItem("Details", stringifiedData); // const jsonData = JSON.stringify(Object.fromEntries(formData));
-    // console.log("JSON BODY:", jsonData);
+    console.log("JSON BODY:", jsonData);
+    console.log(stringifiedData);
     handleConfirmation(jsonData);
   } else if (!termsEl.checked) {
     alert("You forgot to agree with our terms and conditions");
@@ -36,13 +37,10 @@ function handleConfirmation(data) {
 }
 
 function confirm(data) {
-  console.log(data);
   const nameEl = data.firstName;
   const emailEl = data.email;
   const thanksEl = document.getElementById("thankCustomer");
-  // const displayEmailEl = document.getElementById("displayEmail");
   thanksEl.textContent = `Thank you for trusting us ${nameEl} !`;
-  // displayEmailEl.textContent = `at ${emailEl}`;
 }
 
 /*==================================================Return Home Button=======================================*/

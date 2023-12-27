@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-aLMPjG3K.js"></script>
+    <script type="module" crossorigin src="./assets/index-IrCOBouI.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-Pg9S_Cn4.css">
   </head>
   <body
@@ -172,16 +172,17 @@
             >
             <div class="flex">
               <input
-                type="email"
+                type="text"
                 placeholder="Enter mail address"
                 id="email"
                 name="email"
                 autocomplete="off"
                 required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 title="Please enter a valid email address"
                 class="bg-[#d8d8d8] px-3 py-1 rounded outline-none focus:ring-2 focus:ring-[#03045e] placeholder-[#a18db8]"
               />
+
               <p class="text-sm text-red-900 ms-2 hidden" id="emailError">
                 Enter correct Mail Address!
               </p>
