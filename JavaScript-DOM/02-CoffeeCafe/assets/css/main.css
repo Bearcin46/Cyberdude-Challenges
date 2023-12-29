@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deleteEl {
+  @apply px-2 py-1 rounded bg-red-500 hover:bg-red-600 text-white text-sm;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="./assets/logo-b57Wys6L.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Coffee Time</title>
+    <script type="module" crossorigin src="./assets/index-Ti0NlVFc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-UHEVv6cE.css">
+  </head>
+  <body class="mx-auto max-w-xxl bg-[#f5f1e9ff]">
+    <header>
+      <nav
+        class="flex flex-col px-2 mt-2 md:flex md:flex-row md:justify-between items-center md:px-5 md:py-2"
+      >
+        <section class="flex items-center justify-between flex-1">
+          <!---------------------Logo----------------->
+          <div class="cursor-pointer">
+            <h5 class="text-xs ml-4 text-[#945c44ff]">The</h5>
+            <h2 class="text-lg ml-1 leading-none text-[#945c44ff]">Coffee</h2>
+            <h3
+              class="text-[14px] ml-3 leading-none text-[#945c44ff] font-cursive"
+            >
+              Time
+            </h3>
+          </div>
+
+          <!-------------------hamburger---------------->
+          <div class="cursor-pointer md:hidden" onclick="hamburger()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              class="text-[#945c44ff]"
+            >
+              <path
+                fill="currentColor"
+                d="M3 4h18v2H3zm0 15h18v2H3zm0-5h18v2H3zm0-5h18v2H3z"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <!---------------------Menu Items------------->
+        <div
+          class="flex flex-col mt-5 hidden w-full md:w-fit md:flex md:flex-row md:gap-4"
+          id="links"
+        >
+          <a
+            href="#"
+            class="hover:bg-[#d9baa0ff] hover:text-white w-full text-center md:w-fit md:bg-[#d68d6d] md:rounded md:text-white px-2 py-1 md:hover:bg-[#945c44ff]"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#d9baa0ff] hover:text-white w-full text-center md:w-fit md:bg-[#d68d6d] md:rounded md:text-white px-2 py-1 md:hover:bg-[#945c44ff]"
+            >Our Services</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#d9baa0ff] hover:text-white w-full text-center md:w-fit md:bg-[#d68d6d] md:rounded md:text-white px-2 py-1 md:hover:bg-[#945c44ff]"
+            >Cafe Menu</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------------------------*******Banner*******-------------------------------------------->
+    <section
+      class="bg-hero-banner md:bg-heromd-banner bg-cover py-20 md:py-64 md:bg-cover mt-2"
+    >
+      <h1
+        class="text-xl text-white md:text-6xl font-semibold text-center md:font-bold font-cursive"
+      >
+        Great Ideas Come from Great Coffee
+      </h1>
+      <h1
+        class="text-lg text-white font-semibold text-center md:text-6xl md:font-bold"
+      >
+        Never miss it.
+      </h1>
+    </section>
+
+    <!-------------------------------------********Main Content******--------------------------------------->
+    <section class="mt-10">
+      <h2
+        class="mb-4 md:mb-8 md:text-3xl text-center text-xl font-semibold text-[#945c44ff]"
+      >
+        A hot cup of Happiness
+      </h2>
+      <section class="grid gap-6 md:gap-4 md:grid-cols-2">
+        <div class="grid place-content-center">
+          <img
+            src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="rounded"
+          />
+        </div>
+        <div
+          class="flex flex-col px-3 items-start justify-center gap-2"
+          id="intro"
+        >
+          <p class="ml-1 md:text-lg">
+            You&rsquo;re Never Alone with a Cup of Coffee. If Life is hard, then
+            <span class="text-[#945c44ff] font-semibold">Coffee</span> makes it
+            Better.
+          </p>
+          <p class="ml-1 md:text-lg">
+            The Coffee Movement is more than just a cafe; it's a community hub
+            and a coffee laboratory all rolled into one. Founded in 2016 by
+            Bryan Overstreet and Reef Bessette, the journey began in the back of
+            a 1969 VW bus, bringing a unique coffee experience to wherever their
+            wheels took them. After a couple of years as a mobile cafe, they
+            found a quaint space in an unassuming street in Chinatown, with a
+            view of the cable cars passing by. This small cafe has now become a
+            beloved gathering spot for the community and a hidden gem for coffee
+            aficionados seeking some of the finest coffee from roasters around
+            the globe..
+          </p>
+          <button
+            class="bg-[#d68d6d] hover:bg-[#945c44ff] text-white font-semibold px-3 py-2 rounded-xl"
+            id="order-now"
+          >
+            Order Now
+          </button>
+        </div>
+      </section>
+    </section>
+    <!----------------------------------************Form & confirm**********--------------------------------------->
+
+    <section class="md:py-1 md:mt-6">
+      <h3
+        class="py-5 font-bold text-xxl md:text-5xl text-center text-[#945c44ff]"
+      >
+        <span
+          class="text-white bg-green-800 px-3 py-1 mr-2 rounded font-cursive"
+          >New Year Sale!!</span
+        >Buy any coffee at $8
+      </h3>
+      <section class="grid md:flex md:gap-5 md:px-4 mt-10">
+        <!-----------------------------------------FORM----------------------------------------------------->
+        <form
+          action=""
+          id="formData"
+          name="order-form"
+          class="md:py-10 md:px-4 px-1 rounded-xl py-4 w-full bg-[#c9ab99ff]"
+        >
+          <!---------------Name-------------->
+          <div class="grid grid-rows-2">
+            <div>
+              <label for="name" class="text-[#945c44ff]">Full Name</label
+              ><span class="text-red-600">*</span>
+            </div>
+            <input
+              type="text"
+              id="name"
+              name="fullName"
+              placeholder="Enter your Full Name"
+              class="outline-none px-2 py-1 rounded-full focus:outline-1 focus:outline-[#945c44ff]"
+            />
+          </div>
+          <!-------------Mobile Number--------->
+          <div class="grid grid-rows-2">
+            <div>
+              <label for="mobile" class="text-[#945c44ff]">Mobile</label
+              ><span class="text-red-600">*</span>
+            </div>
+            <input
+              type="number"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter Mobile Number"
+              class="px-2 py-1 outline-none rounded-full focus:outline-1 focus:outline-[#945c44ff]"
+            />
+          </div>
+          <!------------- email--------->
+          <div class="grid grid-rows-2">
+            <div class="flex">
+              <label for="email" class="text-[#945c44ff]">Email</label>
+              <span class="text-red-600">*</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter Mail Address"
+              id="email"
+              name="email"
+              class="px-2 py-1 outline-none rounded-full focus:outline-1 focus:outline-[#945c44ff]"
+            />
+          </div>
+          <!-------------Address----------------->
+          <div class="grid grid-rows-1">
+            <div class="flex">
+              <label for="address" class="text-[#945c44ff]">Address</label>
+              <span class="text-red-600">*</span>
+            </div>
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="4"
+              name="address"
+              placeholder="Enter your address"
+              class="px-2 py-1 outline-none rounded-xl focus:outline-1 focus:outline-[#945c44ff]"
+            ></textarea>
+          </div>
+          <!---------------------coffee----------------->
+          <div class="grid" id="selected-coffee">
+            <div class="flex">
+              <p class="mb-2 text-[#945c44ff]">Choose your Favourite</p>
+              <span class="text-red-600">*</span>
+            </div>
+            <div id="choose-coffee">
+              <div>
+                <input
+                  type="checkbox"
+                  class="accent-[#945c44ff]"
+                  name="coffee"
+                  value="Quick Filter"
+                  id="quick-filter"
+                /><label for="quick-filter" class="ml-1">Quick Filter</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="cappuccino"
+                  name="coffee"
+                  value="Cappuccino"
+                  class="accent-[#945c44ff]"
+                /><label for="cappuccino" class="ml-1">Cappuccino</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="latte"
+                  name="coffee"
+                  value="Latte"
+                  class="accent-[#945c44ff]"
+                /><label for="latte" class="ml-1">Latte</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="slow-drip"
+                  name="coffee"
+                  value="Slow Drip"
+                  class="accent-[#945c44ff]"
+                /><label for="slow-drip" class="ml-1">Slow Drip</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="chai-tea-latte"
+                  name="coffee"
+                  value="Chai Tea Latte"
+                  class="accent-[#945c44ff]"
+                /><label for="chai-tea-latte" class="ml-1"
+                  >Chai Tea Latte</label
+                >
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="hot-toddy"
+                  name="coffee"
+                  value="Hot Toddy"
+                  class="accent-[#945c44ff]"
+                /><label for="hot-toddy" class="ml-1">Hot Toddy</label>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------quantity------------------------------>
+          <div class="grid grid-rows-2">
+            <div class="flex">
+              <label for="quantity" class="text-[#945c44ff]">Quantity</label>
+              <span class="text-red-600">*</span>
+            </div>
+            <select
+              name="quantity"
+              id="quantity"
+              class="outline-none px-2 py-1 rounded-full focus:outline-1 focus:outline-[#945c44ff]"
+            >
+              <option value="">--Select Quantity--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <!----------------------------button----------------------->
+          <div class="grid place-items-center mt-5">
+            <button
+              class="bg-[#bf6f4c] hover:bg-[#945c44ff] px-4 py-1 rounded-full text-white font-semibold"
+              id="proceed"
+            >
+              Proceed
+            </button>
+          </div>
+        </form>
+        <!----------------------------------------confirmation---------------------------------------------->
+        <section
+          id="confirmation"
+          class="bg-[#d9baa0ff] px-3 py-2 md:px-40 rounded hidden flex items-center justify-center"
+        >
+          <div class="bg-white px-8 py-10 w-full">
+            <h1
+              class="text-center text-2xl font-bold font-cursive"
+              id="greeting"
+            >
+              Hi Sweety !!
+            </h1>
+            <img
+              src="./assets/Online_Shoping_29-VwfleH1d.jpg"
+              alt=""
+              class="rounded h-[300px] w-[500px]"
+            />
+            <p class="text-lg font-semibold">
+              You have ordered :
+              <span id="orderedItems" class="text-green-800"></span>
+            </p>
+            <p class="text-lg font-semibold">
+              Total Cost is
+              <span id="totalCost" class="text-green-800"> $</span>
+            </p>
+            <div class="grid place-items-center gap-1 grid-cols-2 mt-4">
+              <button
+                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-3 py-1 text-white rounded"
+                id="order"
+              >
+                Order
+              </button>
+              <button
+                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-3 py-1 text-white rounded"
+                id="cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </section>
+        <!------------------------------------------Image--------------------------------------------------->
+        <div class="flex flex-col px-3 w-full">
+          <p
+            class="font-bold text-xxl md:text-xl text-center text-red-500 mb-4"
+          >
+            ( Offers are available both in store and online)
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
+            alt=""
+            class="object-cover rounded"
+          />
+        </div>
+      </section>
+    </section>
+
+    <div>
+      <div class="my-5 space-y-5">
+        <table class="table table-fixed border w-full text-center bg-white">
+          <tr>
+            <th class="px-2 py-1 border w-14">C.No</th>
+            <th class="px-2 py-1 border">Customer</th>
+            <th class="px-2 py-1 border">Mobile</th>
+            <th class="px-2 py-1 border">Ordered Item</th>
+            <th class="px-2 py-1 border">Address</th>
+            <th class="px-2 py-1 border w-20">Action</th>
+          </tr>
+          <tbody id="customerDataTable"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
