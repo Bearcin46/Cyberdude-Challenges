@@ -1,5 +1,6 @@
 import JustValidate from "just-validate";
 import { v4 as uuidv4 } from "uuid";
+import party from "party-js";
 const formEl = document.getElementById("formData");
 
 const localStorageKey = "customerDetails";
@@ -73,10 +74,11 @@ validateForm.onSuccess(() => {
   //show details
   /*============================================confirmation ================================================*/
   const confirmationDiv = document.getElementById("confirmation");
+  const orderMessageDiv = document.getElementById("orderMessage");
   const greetingEl = document.getElementById("greeting");
   const ordereditemsEl = document.getElementById("orderedItems");
   const totalCostEl = document.getElementById("totalCost");
-  greetingEl.innerText = `Hi!!! ${formValueObj.fullName} `;
+  greetingEl.innerText = `Hi ${formValueObj.fullName} !! `;
   ordereditemsEl.innerText = ` ${formValueObj.SelectedCoffee} `;
   const totalOrderedItems = `${selectedCoffee[1]}`;
   const quantity = formValueObj.quantity;
@@ -88,9 +90,17 @@ validateForm.onSuccess(() => {
   //if ordered
   const orderBtn = document.getElementById("order");
   const cancelBtn = document.getElementById("cancel");
+  const dismissBtn = document.getElementById("dismiss");
+  const table = document.getElementById("tableFormat");
   orderBtn.addEventListener("click", () => {
-    alert("Yayyy!! Your order on the way!!");
     confirmationDiv.classList.add("hidden");
+    orderMessageDiv.classList.remove("hidden");
+    table.classList.remove("hidden");
+    startConfettiAnimation();
+  });
+  //dismiss
+  dismissBtn.addEventListener("click", () => {
+    orderMessageDiv.classList.add("hidden");
     formEl.classList.remove("hidden");
     formEl.reset();
   });
@@ -98,6 +108,7 @@ validateForm.onSuccess(() => {
   cancelBtn.addEventListener("click", () => {
     confirmationDiv.classList.add("hidden");
     formEl.classList.remove("hidden");
+    table.classList.add("hidden");
     formEl.reset();
   });
 
@@ -204,3 +215,15 @@ function deleteDetails(data) {
 }
 
 document.addEventListener("DOMContentLoaded", () => getallcustomerDetails());
+
+/*==============================function to start the animation======================================*/
+const orderSectionDiv = document.getElementById("orderSection");
+function startConfettiAnimation() {
+  party.confetti(orderSectionDiv);
+  setTimeout(stopConfettiAnimation, 5000);
+}
+
+/*==============================function to end the animation======================================*/
+function stopConfettiAnimation() {
+  party.clear();
+}

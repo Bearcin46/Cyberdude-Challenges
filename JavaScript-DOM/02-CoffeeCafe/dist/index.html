@@ -5,8 +5,8 @@
     <link rel="icon" type="image/jpeg" href="./assets/logo-pAUA7oYT.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Coffee Time</title>
-    <script type="module" crossorigin src="./assets/index-KDQRzo3W.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CfUO6yuB.css">
+    <script type="module" crossorigin src="./assets/index-c847Ew8t.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-e8Y1FXCp.css">
   </head>
   <body class="mx-auto max-w-xxl bg-[#f5f1e9ff]">
     <header>
@@ -159,87 +159,163 @@
           >New Year Sale!!</span
         >Buy any coffee at $8
       </h3>
-      <section class="md:flex gap-3 md:gap-5 md:px-4 mt-10">
+      <section class="md:flex gap-3 md:gap-5 md:px-4 mt-10" id="orderSection">
         <!-----------------------------------------FORM----------------------------------------------------->
         <form
           action=""
           id="formData"
           name="order-form"
-          class="md:py-10 md:px-4 px-1 rounded-xl py-4 w-full bg-[#c9ab99ff]"
+          class="md:py-10 md:px-4 px-1  rounded-xl py-4 w-full bg-[#c9ab99ff]"
         >
+          <h3
+            class="py-2 font-bold text-2xl mt-3 md:text-5xl text-center text-[#945c44ff]"
+          >
+            <span
+              class="text-white bg-[#945c44ff] px-3 py-1 mr-2 rounded font-cursive"
+              >The Coffee Time</span
+            >
+          </h3>
           <!---------------Name-------------->
-          <div class="grid grid-rows-2">
+          <div class="grid gap-1">
             <div>
-              <label for="name" class="text-[#945c44ff]">Full Name</label
+              <label for="name" class="text-[#945c44ff] font-bold"
+                >Full Name</label
               ><span class="text-red-600">*</span>
             </div>
-            <input
-              type="text"
-              id="name"
-              name="fullName"
-              placeholder="Enter your Full Name"
-              class="outline-none px-2 py-1 rounded-full focus:outline-1 focus:outline-[#945c44ff]"
-            />
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="text-[#c1a89d] absolute left-1 top-1"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"
+                />
+              </svg>
+              <input
+                type="text"
+                id="name"
+                name="fullName"
+                placeholder="Enter your Full Name"
+                class="outline-none placeholder-[#c1a89d] w-full px-8 py-1 rounded-md focus:outline-1 focus:outline-[#945c44ff]"
+              />
+            </div>
           </div>
           <!-------------Mobile Number--------->
-          <div class="grid grid-rows-2">
+          <div class="grid gap-1 mt-1">
             <div>
-              <label for="mobile" class="text-[#945c44ff]">Mobile</label
+              <label for="mobile" class="text-[#945c44ff] font-bold"
+                >Mobile</label
               ><span class="text-red-600">*</span>
             </div>
-            <input
-              type="number"
-              id="mobile"
-              name="mobile"
-              placeholder="Enter Mobile Number"
-              class="px-2 py-1 outline-none rounded-full focus:outline-1 focus:outline-[#945c44ff]"
-            />
+            <div class="relative input-spin">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 24 24"
+                class="text-[#c1a89d] absolute left-1 top-2"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"
+                />
+              </svg>
+              <input
+                type="number"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter Mobile Number"
+                class="py-1 outline-none rounded-md placeholder-[#c1a89d] w-full px-8 focus:outline-1 focus:outline-[#945c44ff]"
+              />
+            </div>
           </div>
           <!------------- email--------->
-          <div class="grid grid-rows-2">
+          <div class="grid gap-1  mt-1">
             <div class="flex">
-              <label for="email" class="text-[#945c44ff]">Email</label>
+              <label for="email" class="text-[#945c44ff] font-bold"
+                >Email</label
+              >
               <span class="text-red-600">*</span>
             </div>
-            <input
-              type="text"
-              placeholder="Enter Mail Address"
-              id="email"
-              name="email"
-              class="px-2 py-1 outline-none rounded-full focus:outline-1 focus:outline-[#945c44ff]"
-            />
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                class="text-[#c1a89d] absolute left-1 top-1"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5l8-5v10z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Enter Mail Address"
+                id="email"
+                name="email"
+                class="py-1 outline-none rounded-md w-full px-8 placeholder-[#c1a89d] focus:outline-1 focus:outline-[#945c44ff]"
+              />
+            </div>
           </div>
           <!-------------Address----------------->
-          <div class="grid grid-rows-1">
+          <div class="grid grid-rows-1 mt-1">
             <div class="flex">
-              <label for="address" class="text-[#945c44ff]">Address</label>
+              <label for="address" class="text-[#945c44ff] font-bold mb-1"
+                >Address</label
+              >
               <span class="text-red-600">*</span>
             </div>
-            <textarea
-              name="address"
-              id="address"
-              cols="30"
-              rows="4"
-              name="address"
-              placeholder="Enter your address"
-              class="px-2 py-1 outline-none rounded-xl focus:outline-1 focus:outline-[#945c44ff]"
-            ></textarea>
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                class="text-[#c1a89d] absolute left-1 top-2"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 21V7h6V5l3-3l3 3v6h6v10zm2-2h2v-2H5zm0-4h2v-2H5zm0-4h2V9H5zm6 8h2v-2h-2zm0-4h2v-2h-2zm0-4h2V9h-2zm0-4h2V5h-2zm6 12h2v-2h-2zm0-4h2v-2h-2z"
+                />
+              </svg>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="4"
+                name="address"
+                placeholder="Enter your delievery Address"
+                class="w-full px-8 py-2 outline-none rounded-xl focus:outline-1 focus:outline-[#945c44ff] placeholder-[#c1a89d]"
+              ></textarea>
+            </div>
           </div>
           <!---------------------coffee----------------->
           <div class="grid" id="selected-coffee">
             <div class="flex">
-              <p class="mb-2 text-[#945c44ff]">Choose your Favourite</p>
+              <p class="mb-2 text-[#945c44ff] font-bold">
+                Choose your Favourite
+              </p>
               <span class="text-red-600">*</span>
             </div>
-            <div id="choose-coffee">
+            <div id="choose-coffee" class="grid grid-cols-3 gap-y-3">
               <div>
                 <input
                   type="checkbox"
-                  class="accent-[#945c44ff]"
+                  class="accent-[#945c44ff] w-4 h-4"
                   name="coffee"
                   value="Quick Filter"
                   id="quick-filter"
-                /><label for="quick-filter" class="ml-1">Quick Filter</label>
+                /><label
+                  for="quick-filter"
+                  class="ml-1 text-[16px] font-semibold"
+                  >Quick Filter</label
+                >
               </div>
               <div>
                 <input
@@ -247,8 +323,10 @@
                   id="cappuccino"
                   name="coffee"
                   value="Cappuccino"
-                  class="accent-[#945c44ff]"
-                /><label for="cappuccino" class="ml-1">Cappuccino</label>
+                  class="accent-[#945c44ff] w-4 h-4"
+                /><label for="cappuccino" class="ml-1 text-[16px] font-semibold"
+                  >Cappuccino</label
+                >
               </div>
               <div>
                 <input
@@ -256,8 +334,10 @@
                   id="latte"
                   name="coffee"
                   value="Latte"
-                  class="accent-[#945c44ff]"
-                /><label for="latte" class="ml-1">Latte</label>
+                  class="accent-[#945c44ff] w-4 h-4"
+                /><label for="latte" class="ml-1 text-[16px] font-semibold"
+                  >Latte</label
+                >
               </div>
               <div>
                 <input
@@ -265,8 +345,10 @@
                   id="slow-drip"
                   name="coffee"
                   value="Slow Drip"
-                  class="accent-[#945c44ff]"
-                /><label for="slow-drip" class="ml-1">Slow Drip</label>
+                  class="accent-[#945c44ff] w-4 h-4"
+                /><label for="slow-drip" class="ml-1 text-[16px] font-semibold"
+                  >Slow Drip</label
+                >
               </div>
               <div>
                 <input
@@ -274,8 +356,10 @@
                   id="chai-tea-latte"
                   name="coffee"
                   value="Chai Tea Latte"
-                  class="accent-[#945c44ff]"
-                /><label for="chai-tea-latte" class="ml-1"
+                  class="accent-[#945c44ff] w-4 h-4"
+                /><label
+                  for="chai-tea-latte"
+                  class="ml-1 text-[16px] font-semibold"
                   >Chai Tea Latte</label
                 >
               </div>
@@ -285,21 +369,25 @@
                   id="hot-toddy"
                   name="coffee"
                   value="Hot Toddy"
-                  class="accent-[#945c44ff]"
-                /><label for="hot-toddy" class="ml-1">Hot Toddy</label>
+                  class="accent-[#945c44ff] w-4 h-4"
+                /><label for="hot-toddy" class="ml-1 text-[16px] font-semibold"
+                  >Hot Toddy</label
+                >
               </div>
             </div>
           </div>
           <!-----------------------------quantity------------------------------>
           <div class="grid grid-rows-2">
             <div class="flex">
-              <label for="quantity" class="text-[#945c44ff]">Quantity</label>
+              <label for="quantity" class="text-[#945c44ff] font-bold"
+                >Quantity</label
+              >
               <span class="text-red-600">*</span>
             </div>
             <select
               name="quantity"
               id="quantity"
-              class="outline-none px-2 py-1 rounded-full focus:outline-1 focus:outline-[#945c44ff]"
+              class="outline-none px-2 py-1 rounded-md focus:outline-1 focus:outline-[#945c44ff]"
             >
               <option value="">--Select Quantity--</option>
               <option value="1">1</option>
@@ -310,7 +398,7 @@
           <!----------------------------button----------------------->
           <div class="grid place-items-center mt-5">
             <button
-              class="bg-[#bf6f4c] hover:bg-[#945c44ff] px-4 py-1 rounded-full text-white font-semibold"
+              class="hover:bg-[#bf6f4c] bg-[#945c44ff] text-xl px-4 py-2 rounded-full text-white font-semibold"
               id="proceed"
             >
               Proceed
@@ -320,11 +408,11 @@
         <!----------------------------------------confirmation---------------------------------------------->
         <section
           id="confirmation"
-          class="bg-[#d9baa0ff] px-3 py-2 md:px-40 rounded hidden flex items-center justify-center"
+          class="bg-[#d9baa0ff] px-3 py-3 md:px-40 rounded hidden flex items-center justify-center"
         >
-          <div class="bg-white px-8 py-10 w-full">
+          <div class="bg-white px-8 py-10 w-full rounded-md">
             <h1
-              class="text-center text-2xl font-bold font-cursive"
+              class="text-center text-4xl font-bold font-cursive mb-3"
               id="greeting"
             >
               Hi Sweety !!
@@ -334,12 +422,12 @@
               alt=""
               class="rounded h-[300px] w-[600px]"
             />
-            <p class="text-lg font-semibold">
+            <p class="text-lg font-semibold mt-2">
               You have ordered :
               <span id="orderedItems" class="text-green-800"></span>
             </p>
             <p class="text-lg font-semibold">
-              Total Cost is
+              Total Cost :
               <span id="totalCost" class="text-green-800"> $</span>
             </p>
             <div class="grid place-items-center gap-1 grid-cols-2 mt-4">
@@ -358,6 +446,34 @@
             </div>
           </div>
         </section>
+        <!----------------------------------------confirmation of Order---------------------------------------------->
+        <section
+          id="orderMessage"
+          class="bg-[#d9baa0ff] px-3 hidden py-3 md:px-40 rounded flex items-center justify-center"
+        >
+          <div class="bg-white px-8 py-10 w-full rounded-md">
+            <h1
+              class="text-center text-green-800 text-4xl font-bold font-cursive mb-3"
+              id="greeting"
+            >
+              Yayy!! Your order is on the way!
+            </h1>
+            <img
+              src="./assets/19598022-GNa-FHzm.jpg"
+              alt=""
+              class="rounded h-[300px] w-[700px]"
+            />
+
+            <div class=" flex items-center justify-center mt-4">
+              <button
+                class="bg-green-800 hover:bg-green-950 px-4 py-2 text-white font-semibold rounded"
+                id="dismiss"
+              >
+                Dismiss
+              
+            </div>
+          </div>
+        </section>
         <!------------------------------------------Image--------------------------------------------------->
         <div class="flex flex-col px-3 w-full">
           <p
@@ -373,8 +489,8 @@
         </div>
       </section>
     </section>
-
-    <div>
+    <!----------------------------------------Order Details---------------------------------------------->
+    <div class="hidden" id="tableFormat">
       <div class="my-5 space-y-5">
         <table class="table table-fixed border w-full text-center bg-white">
           <tr>
