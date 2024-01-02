@@ -5,8 +5,8 @@
     <link rel="icon" type="image/jpeg" href="./assets/logo-pAUA7oYT.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Coffee Time</title>
-    <script type="module" crossorigin src="./assets/index-c847Ew8t.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-e8Y1FXCp.css">
+    <script type="module" crossorigin src="./assets/index-YBi-k5tm.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-7NKrZWyy.css">
   </head>
   <body class="mx-auto max-w-xxl bg-[#f5f1e9ff]">
     <header>
@@ -159,13 +159,13 @@
           >New Year Sale!!</span
         >Buy any coffee at $8
       </h3>
-      <section class="md:flex gap-3 md:gap-5 md:px-4 mt-10" id="orderSection">
+      <section class="md:flex gap-3 md:gap-5 md:px-4 mt-10 " id="orderSection">
         <!-----------------------------------------FORM----------------------------------------------------->
         <form
           action=""
           id="formData"
           name="order-form"
-          class="md:py-10 md:px-4 px-1  rounded-xl py-4 w-full bg-[#c9ab99ff]"
+          class="md:py-10 md:px-4 px-1  rounded-xl py-4 w-full bg-[#c9ab99ff] shadow-xl shadow-gray-600"
         >
           <h3
             class="py-2 font-bold text-2xl mt-3 md:text-5xl text-center text-[#945c44ff]"
@@ -410,7 +410,7 @@
           id="confirmation"
           class="bg-[#d9baa0ff] px-3 py-3 md:px-40 rounded hidden flex items-center justify-center"
         >
-          <div class="bg-white px-8 py-10 w-full rounded-md">
+          <div class="bg-white px-8 py-10 w-full rounded-md  shadow-xl shadow-gray-500">
             <h1
               class="text-center text-4xl font-bold font-cursive mb-3"
               id="greeting"
@@ -420,7 +420,7 @@
             <img
               src="./assets/Online_Shoping_29-VwfleH1d.jpg"
               alt=""
-              class="rounded h-[300px] w-[600px]"
+              class="rounded h-[300px] w-[700px]"
             />
             <p class="text-lg font-semibold mt-2">
               You have ordered :
@@ -432,13 +432,13 @@
             </p>
             <div class="grid place-items-center gap-1 grid-cols-2 mt-4">
               <button
-                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-3 py-1 text-white rounded"
+                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-4 py-2 font-bold text-white rounded  shadow-lg shadow-gray-500"
                 id="order"
               >
                 Order
               </button>
               <button
-                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-3 py-1 text-white rounded"
+                class="bg-[#d68d6d] hover:bg-[#945c44ff] px-4 py-2 font-bold shadow-lg shadow-gray-500 text-white rounded"
                 id="cancel"
               >
                 Cancel
@@ -449,9 +449,9 @@
         <!----------------------------------------confirmation of Order---------------------------------------------->
         <section
           id="orderMessage"
-          class="bg-[#d9baa0ff] px-3 hidden py-3 md:px-40 rounded flex items-center justify-center"
+          class="bg-[#d9baa0ff] px-3  py-3 md:px-40 hidden rounded-md flex shadow-xl shadow-gray-600 items-center justify-center"
         >
-          <div class="bg-white px-8 py-10 w-full rounded-md">
+          <div class="bg-white px-8 py-10 w-full rounded-md shadow-xl shadow-gray-600">
             <h1
               class="text-center text-green-800 text-4xl font-bold font-cursive mb-3"
               id="greeting"
@@ -466,7 +466,7 @@
 
             <div class=" flex items-center justify-center mt-4">
               <button
-                class="bg-green-800 hover:bg-green-950 px-4 py-2 text-white font-semibold rounded"
+                class="bg-green-800 hover:bg-green-950 px-4 py-2 text-white shadow-xl shadow-gray-600 font-semibold rounded"
                 id="dismiss"
               >
                 Dismiss
@@ -477,22 +477,27 @@
         <!------------------------------------------Image--------------------------------------------------->
         <div class="flex flex-col px-3 w-full">
           <p
-            class="font-bold text-2xl md:text-3xl text-center font-bold text-red-500 mb-4 font-cursive"
+            class="font-bold text-2xl md:text-3xl text-center font-bold text-red-500 mb-4 font-cursive "
           >
             ( Offers are available both in store and online)
           </p>
           <img
-            src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
-            alt=""
-            class="object-cover rounded"
+            src="./assets/24399-tHD4fKSl.jpg"
+            class="object-cover rounded-md shadow-xl shadow-gray-600"
           />
         </div>
       </section>
     </section>
     <!----------------------------------------Order Details---------------------------------------------->
-    <div class="hidden" id="tableFormat">
-      <div class="my-5 space-y-5">
-        <table class="table table-fixed border w-full text-center bg-white">
+    <div class="mt-16 hidden" id="tableFormat">
+      <h1
+              class="text-center text-green-800 text-5xl font-bold font-cursive mb-3"
+              id="greeting"
+            >
+              Coffee Orders!
+            </h1>
+      <div class="my-5 space-y-5 md:px-5">
+        <table class="table table-fixed border w-full rounded-md text-center bg-[#d4c4b8]">
           <tr>
             <th class="px-2 py-1 border w-14">C.No</th>
             <th class="px-2 py-1 border">Customer</th>
@@ -504,6 +509,10 @@
           <tbody id="customerDataTable"></tbody>
         </table>
       </div>
+    </div>
+    <!------------------------------------footer-------------------------------------------------------->
+    <div class="bg-[#d9baa0ff]  flex items-center justify-center mt-8">
+      <p class="">Designed and Developed by Bearcin Sweety <span style='font-size:30px;'>&#127881;</span></p>
     </div>
   </body>
 </html>

@@ -102,6 +102,7 @@ validateForm.onSuccess(() => {
   dismissBtn.addEventListener("click", () => {
     orderMessageDiv.classList.add("hidden");
     formEl.classList.remove("hidden");
+    table.classList.add("hidden");
     formEl.reset();
   });
   // if cancelled
@@ -142,7 +143,6 @@ function getSelectedCoffee() {
   }
   const totalItems = selectedValues.length;
   const orderedItems = selectedValues.join(", ");
-  alert(orderedItems);
   return [orderedItems, totalItems];
 }
 
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => getallcustomerDetails());
 const orderSectionDiv = document.getElementById("orderSection");
 function startConfettiAnimation() {
   party.confetti(orderSectionDiv);
-  setTimeout(stopConfettiAnimation, 5000);
+  setTimeout(stopConfettiAnimation, 7000);
 }
 
 /*==============================function to end the animation======================================*/
