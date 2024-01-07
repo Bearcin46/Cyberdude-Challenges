@@ -4,8 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="./assets/images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Coffee Time website was built by Bearcin Sweety. This website contains forms to order coffee and then it gives alert of confirmation. You can also see the number of orders and you can also delete the orders."
+    />
+    <meta
+      name="keywords"
+      content="Coffeecafe,Coffeetime,Coffeewebsite"
+    />
+    <meta name="author" content="Bearcin Sweety" />
+    <meta property="og:title" content="The Coffee Time" />
+    <meta
+      property="og:description"
+      content="It's a sample website for coffee shop"
+    />
+    <meta
+      property="og:image"
+      content="//image/coffee-time.jpg"
+    />
     <title>The Coffee Time</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="mx-auto max-w-xxl bg-[#f5f1e9ff]">
     <header>
@@ -149,12 +168,12 @@
     </section>
     <!----------------------------------************Form & confirm**********--------------------------------------->
 
-    <section class="md:py-1 md:mt-6" id="cafeMenu">
+    <section class="md:py-1 md:mt-6 ml-8" id="cafeMenu">
       <h3
-        class="py-5 font-bold text-2xl mt-3 md:text-5xl text-center text-[#945c44ff]"
+        class="py-5 font-bold text-2xl mt-3 md:text-5xl text-center text-[#945c44ff] "
       >
         <span
-          class="text-white bg-green-800 px-3 py-1 mr-2 rounded font-cursive"
+          class="text-white bg-green-800 px-3 py-1 mr-2 rounded font-cursive shadow-xl shadow-gray-500"
           >New Year Sale!!</span
         >Buy any coffee at $8
       </h3>
@@ -165,6 +184,8 @@
           id="formData"
           name="order-form"
           class="md:py-10 md:px-4 px-1  rounded-xl py-4 w-full bg-[#c9ab99ff] shadow-xl shadow-gray-600"
+          data-aos="fade-up"
+     data-aos-duration="3000"
         >
           <h3
             class="py-2 font-bold text-2xl mt-3 md:text-5xl text-center text-[#945c44ff]"
@@ -474,15 +495,18 @@
           </div>
         </section>
         <!------------------------------------------Image--------------------------------------------------->
-        <div class="flex flex-col px-3 w-full">
+        <div class="flex flex-col px-3 w-full items-center justify-center">
           <p
-            class="font-bold text-2xl md:text-3xl text-center font-bold text-red-500 mb-4 font-cursive "
+            class="font-bold text-2xl md:text-3xl text-center  text-red-500 mb-4 font-cursive "
           >
             ( Offers are available both in store and online)
           </p>
           <img
             src="./assets/images/24399.jpg"
-            class="object-cover rounded-md shadow-xl shadow-gray-600"
+            class="object-cover rounded-md  shadow-xl shadow-gray-600 w-[550px]"
+            data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
           />
         </div>
       </section>
@@ -513,6 +537,10 @@
     <div class="bg-[#d9baa0ff]  flex items-center justify-center mt-8">
       <p class="">Designed and Developed by Bearcin Sweety <span style='font-size:30px;'>&#127881;</span></p>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="module" src="./assets/js/main2.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
