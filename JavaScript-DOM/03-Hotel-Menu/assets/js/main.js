@@ -9,7 +9,10 @@ menulist.forEach((menu) => {
 
   //div for img
   const imgContainer = document.createElement("div");
-  imgContainer.setAttribute("class", "h-[200px] w-[200px] overflow-hidden");
+  imgContainer.setAttribute(
+    "class",
+    "h-[200px] w-[200px] overflow-hidden rounded-md"
+  );
   //img
   const foodImage = document.createElement("img");
   foodImage.setAttribute(
