@@ -6,7 +6,8 @@
     "foodPrice": "Rs.160",
     "dicountPercentage": 10,
     "discount-Availability": null,
-    "added-items": ["Onion-Raita", "Salna"]
+    "added-items": ["Onion-Raita", "Salna"],
+    "delievery": null
   },
   {
     "id": 2,
@@ -15,6 +16,7 @@
     "foodPrice": "Rs.30",
     "dicountPercentage": null,
     "discount-Availability": null,
+    "delievery": "free",
     "added-items": ["Onion-Raita", "Salna"]
   },
   {
@@ -23,6 +25,7 @@
     "foodImage": "https://thumbs.dreamstime.com/b/chapati-indian-flat-bread-dal-chana-masala-healthy-vegetarian-popular-food-eaten-breakfast-lunch-dinner-as-119230519.jpg",
     "foodPrice": "Rs.30",
     "dicountPercentage": null,
+    "delievery": "free",
     "discount-Availability": null,
     "added-items": ["Onion-Raita", "Salna"]
   },
@@ -33,6 +36,7 @@
     "foodPrice": "Rs.160",
     "dicountPercentage": 10,
     "discount-Availability": null,
+    "delievery": null,
     "added-items": ["Onion-Raita", "Salna"]
   },
   {
@@ -41,6 +45,7 @@
     "foodImage": "https://www.fmlive.in/wp-content/uploads/2020/09/Donne-biryani.jpg",
     "foodPrice": "Rs.160",
     "dicount-%": 10,
+    "delievery": null,
     "discount-Availability": null,
     "added-items": ["Onion-Raita", "Salna"]
   },
@@ -59,6 +64,7 @@
     "foodImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSYQUErTc7XO4mRN9LC06OciNaPy5oZvgCg&usqp=CAU",
     "foodPrice": "Rs.160",
     "dicount-%": 10,
+    "delievery": null,
     "discount-Availability": null,
     "added-items": ["Onion-Raita", "Salna"]
   },
@@ -69,6 +75,7 @@
     "foodPrice": "Rs.30",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": "free",
     "added-items": ["Chutney", "Sambhar"]
   },
   {
@@ -78,6 +85,7 @@
     "foodPrice": "Rs.50",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": "free",
     "added-items": ["Vada", "Sambhar", "Tomato chutney", "Cocunut-chutney"]
   },
   {
@@ -87,6 +95,7 @@
     "foodPrice": "Rs.30",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": "free",
     "added-items": ["Cocunut-milk", "Salna"]
   },
   {
@@ -95,6 +104,7 @@
     "foodImage": "https://cdn2.foodviva.com/static-content/food-images/juice-recipes/green-apple-juice-recipe/green-apple-juice-recipe.jpg",
     "foodPrice": "Rs.70",
     "dicount-%": 10,
+    "delievery": "free",
     "discount-Availability": null,
     "added-items": [null, null]
   },
@@ -104,6 +114,7 @@
     "foodImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4YDFXLAU90HmuwTj1IHv65OgA1f_5DG-HL8WbaKx-DJeNcdEjDfW2yZlWfqAO0cCc2Q&usqp=CAU",
     "foodPrice": "Rs.120",
     "dicount-%": 10,
+    "delievery": null,
     "discount-Availability": null,
     "added-items": [null, null]
   },
@@ -114,6 +125,7 @@
     "foodPrice": "Rs.130",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": null,
     "added-items": [null, null]
   },
   {
@@ -123,6 +135,7 @@
     "foodPrice": "Rs.130",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": null,
     "added-items": [null, null]
   },
   {
@@ -132,6 +145,7 @@
     "foodPrice": "Rs.160",
     "dicount-%": 10,
     "discount-Availability": null,
+    "delievery": null,
     "added-items": [null, null]
   }
 ]
