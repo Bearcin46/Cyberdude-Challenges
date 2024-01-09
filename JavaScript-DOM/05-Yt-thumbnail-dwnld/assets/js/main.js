@@ -7,8 +7,11 @@ inputUrlEl.addEventListener("change", (e) => {
   const input = e.target.value;
   const headTag = input.substring(0, 17);
   const headTag2 = input.substring(0, 32);
+  const headTag3 = input.substring(0, 28);
+  console.log(headTag3);
 
-  console.log(headTag2.length);
+  //check whether live or normal or watch
+
   if (headTag === "https://youtu.be/") {
     const subStringVal = input.substring(17, 28);
     const formattedUrl = `https://img.youtube.com/vi/${subStringVal}/sddefault.jpg`;
@@ -17,8 +20,15 @@ inputUrlEl.addEventListener("change", (e) => {
     imgDiv.classList.remove("hidden");
     linkTag.href = formattedUrl;
   } else if (headTag2 === "https://www.youtube.com/watch?v=") {
-    const live = input.substring(32, 43);
-    const formattedLiveUrl = `https://img.youtube.com/vi/${live}/sddefault.jpg`;
+    const watch = input.substring(32, 43);
+    const formattedWatchUrl = `https://img.youtube.com/vi/${watch}/sddefault.jpg`;
+    imgEl.src = formattedWatchUrl;
+    const imgDiv = document.getElementById("imgContainer");
+    imgDiv.classList.remove("hidden");
+    linkTag.href = formattedWatchUrl;
+  } else if (headTag3 === "https://www.youtube.com/live") {
+    const Live = input.substring(29, 40);
+    const formattedLiveUrl = `https://img.youtube.com/vi/${Live}/sddefault.jpg`;
     imgEl.src = formattedLiveUrl;
     const imgDiv = document.getElementById("imgContainer");
     imgDiv.classList.remove("hidden");
@@ -37,3 +47,4 @@ inputUrlEl.addEventListener("change", (e) => {
 // let a="YAKMJpBWSqA"
 // console.log(a.length)
 //https://www.youtube.com/watch?v=aGHVddspRq0&list=PL73Obo20O_7gcXt0cfQA14jey8zavtKAq&pp=iAQB
+//https://www.youtube.com/live/lje9-Ft71IA?si=mlzceLpcZffDxHyM
