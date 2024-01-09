@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Thumbnail Grabber</title>
-    <script type="module" crossorigin src="./assets/index-SMwgxuug.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-PcuL5dqy.css">
+    <script type="module" crossorigin src="./assets/index-I11K0rp4.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-rKRjIRWl.css">
   </head>
-  <body class="bg-yellow-300 mx-auto">
-    <h1 class="text-5xl text-red-600 text-center mt-10 font-semibold">
-      Youtube Thumbnail Download
-    </h1>
-    <div class="flex items-center justify-center mt-16">
-      <input
-        type="text"
-        id="inputUrl"
-        placeholder="Paste the URL"
-        class="px-3 py-3 bg-lime-600 w-[70%] md:w-[60%] focus:outline-green-500 text-white placeholder-white"
-      />
-    </div>
-    <div
-      class="w-full mt-10 flex items-center justify-center hidden gap-7"
-      id="imgContainer"
-    >
-      <a href="" id="linkTag" download="image.jpg" target="_blank">
-        <img src="" alt="" id="image" class="object-cover w-[350px] h-[300px]"
-      /></a>
-      <button
-        class="bg-lime-600 hover:bg-lime-900 text-white px-3 py-3 rounded-md"
-        id="btn"
-        onclick="document.getElementById('linkTag').click()"
+  <body class="bg-gray-800 mx-auto">
+    <div class="backdrop-blur-xl">
+      <h1 class="text-5xl text-red-600 text-center mt-10 font-semibold">
+        Youtube Thumbnail Grabber
+      </h1>
+      <div class="flex items-center justify-center mt-16">
+        <input
+          type="text"
+          id="inputUrl"
+          placeholder="Paste the URL"
+          class="px-3 py-3 bg-lime-600 w-[70%] md:w-[60%] focus:outline-green-500 text-white placeholder-white"
+        />
+      </div>
+      <div
+        class="w-full mt-10 flex items-center justify-center hidden gap-7"
+        id="imgContainer"
       >
-        View Full Screen
-      </button>
+        <a href="" id="linkTag" download="image.jpg" target="_blank">
+          <img
+            src=""
+            alt=""
+            id="image"
+            class="object-cover w-[350px] h-[300px]"
+        /></a>
+        <button
+          class="bg-lime-600 hover:bg-lime-900 text-white px-3 py-3 rounded-md"
+          id="btn"
+          onclick="document.getElementById('linkTag').click()"
+        >
+          View Full Screen
+        </button>
+      </div>
     </div>
   </body>
 </html>
