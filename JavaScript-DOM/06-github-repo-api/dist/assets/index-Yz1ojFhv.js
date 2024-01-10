@@ -1,48 +1,7 @@
-let interns = [
-  "bearcin46",
-  "esakki2104prsnl",
-  "mshajid",
-  "muthukumarimoorthi",
-  "muthuakalya",
-  "dineshdevelope",
-  "jeya-rosini",
-  "swethadsalvatore",
-  "Vk2401",
-  "suriyamassmsd",
-  "riyaz1000",
-  "hema-venkat3",
-  "mushkir",
-  "danielace1",
-  "sharif-22",
-  "gayathrihg",
-  "kishorekumar-kp",
-  "vedhatech002",
-];
-
-for (let i = 0; i < interns.length; i++) {
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", ` https://api.github.com/users/${interns[i]}`, true);
-
-  xhr.onload = function (e) {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        var responseText = JSON.parse(xhr.responseText);
-        //if you want to get then use this
-        //xhr.open("GET", ` https://api.github.com/users/${interns[i]}/repos`, true);
-        // responseText.forEach((element) => {
-        //   // console.log(`${interns[i]}:${element.name}`);
-        //   console.log(element.name);
-        // });
-
-        const mainDiv = document.createElement("div");
-        mainDiv.setAttribute(
-          "class",
-          "flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-white rounded-md shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"
-        );
-        mainDiv.innerHTML += ` 
-        <h3 class="text-center font-bold">${responseText.name}</h3>
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const l of e)if(l.type==="childList")for(const i of l.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function o(e){const l={};return e.integrity&&(l.integrity=e.integrity),e.referrerPolicy&&(l.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?l.credentials="include":e.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function s(e){if(e.ep)return;e.ep=!0;const l=o(e);fetch(e.href,l)}})();let a=["bearcin46","esakki2104prsnl","mshajid","muthukumarimoorthi","muthuakalya","dineshdevelope","jeya-rosini","swethadsalvatore","Vk2401","suriyamassmsd","riyaz1000","hema-venkat3","mushkir","danielace1","sharif-22","gayathrihg","kishorekumar-kp","vedhatech002"];for(let r=0;r<a.length;r++){let t=new XMLHttpRequest;t.open("GET",` https://api.github.com/users/${a[r]}`,!0),t.onload=function(o){if(t.readyState===4)if(t.status===200){var s=JSON.parse(t.responseText);const e=document.createElement("div");e.setAttribute("class","flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-white rounded-md shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"),e.innerHTML+=` 
+        <h3 class="text-center font-bold">${s.name}</h3>
         <img
-          src="${responseText.avatar_url}"
+          src="${s.avatar_url}"
           alt=""
           class="w-28 p-1 h-28 rounded-full  object-cover border-4 border-blue-600"
         />
@@ -63,7 +22,7 @@ for (let i = 0; i < interns.length; i++) {
           </svg>
           <h3 class="font-bold text-blue-600 text-center">User Name</h3>
         </div>
-        <h3 class="text-center">${responseText.login}</h3>
+        <h3 class="text-center">${s.login}</h3>
       </div>
       <div class="flex gap-3 items-start justify-between">
         <div>
@@ -88,7 +47,7 @@ for (let i = 0; i < interns.length; i++) {
             <h3 class="font-bold text-blue-600">Following</h3>
           </div>
 
-          <h3 class="text-center">${responseText.following}</h3>
+          <h3 class="text-center">${s.following}</h3>
         </div>
 
         <div class="">
@@ -108,11 +67,11 @@ for (let i = 0; i < interns.length; i++) {
             <h3 class="font-bold text-blue-600">Total Repo</h3>
           </div>
 
-          <h3 class="text-center">${responseText.public_repos}</h3>
+          <h3 class="text-center">${s.public_repos}</h3>
         </div>
       </div>
       <div class="flex items-center justify-center w-full">
-        <a href="${responseText.repos_url}" target="_blank" >
+        <a href="${s.repos_url}" target="_blank" >
           <button
             class="px-4 py-2 bg-blue-600 hover:bg-blue-700 font-bold  text-white rounded-full"
           >
@@ -121,20 +80,4 @@ for (let i = 0; i < interns.length; i++) {
         </a>
       </div>
     </div>
-      `;
-
-        // Append the created div
-        const container = document.getElementById("mainContainer");
-        container.append(mainDiv);
-      } else {
-        console.error(xhr.status, xhr.statusText);
-      }
-    }
-  };
-
-  xhr.onerror = function (e) {
-    console.error(xhr.statusText);
-  };
-
-  xhr.send(null);
-}
+      `,document.getElementById("mainContainer").append(e)}else console.error(t.status,t.statusText)},t.onerror=function(o){console.error(t.statusText)},t.send(null)}
