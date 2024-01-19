@@ -15,7 +15,7 @@ function getBookDetails(data) {
     const mainDiv = document.createElement("div");
     mainDiv.setAttribute(
       "class",
-      "grid gap-1 rounded-sm shadow-md shadow-[#0bb3a5ff] px-2 py-2"
+      "grid  gap-1 rounded-sm shadow-md shadow-[#0bb3a5ff] px-2 py-2 bg-cyan-500"
     );
     mainDiv.innerHTML = `<div class="w-full py-2 rounded-md flex items-center justify-center">
     <img

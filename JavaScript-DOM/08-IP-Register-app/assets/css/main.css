@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deleteEl {
+  @apply px-2 py-1 w-full rounded-sm bg-red-500 hover:bg-red-600 text-white text-sm;
+}
