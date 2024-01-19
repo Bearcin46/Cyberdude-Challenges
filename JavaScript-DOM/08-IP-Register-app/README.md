@@ -16,6 +16,14 @@ The concept is, to create a signup and login, once you loggined in, it must show
 
 ![image](./assets/images/Final.png)
 
+## Final Output after deployment
+
+![image](./assets/images/deploy.png)
+
+## Live Link
+
+You can watch the live <a href="https://bearcin46.github.io/Cyberdude-Challenges/JavaScript-DOM/08-IP-Register-app/dist/">Here</a>
+
 ## Acknowledgement
 
 I would like to thank my Guide and Mentor Mr.AnbuSelvan,for his guidance.
