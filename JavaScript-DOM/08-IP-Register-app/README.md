@@ -4,7 +4,7 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
 
 ## IP-Registration App
 
-The concept is, to create a signup and login, once you loggined in, it must show all the login history as well as the IP address.
+The concept is, to create a signup and login, once you are logged in, it must show all the login history as well as the IP address.
 
 ## Hand Sketch
 
