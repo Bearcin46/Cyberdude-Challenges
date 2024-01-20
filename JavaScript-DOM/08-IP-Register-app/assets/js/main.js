@@ -85,6 +85,7 @@ validateForm.onSuccess((e) => {
     newUserdata.push(userDetails);
     localStorage.setItem(localStorageKey, JSON.stringify(newUserdata));
   }
+  alert("Account created Successfully");
   routeToLogin();
   //change to login page
 });
