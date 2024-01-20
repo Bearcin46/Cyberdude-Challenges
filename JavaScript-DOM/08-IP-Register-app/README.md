@@ -8,6 +8,8 @@ The concept is, to create a signup and login, once you are logged in, it must sh
 
 ## Hand Sketch
 
+![image](./assets/images/rough.jpg)
+
 ## Figma early development
 
 ![image](./assets/images/figma.png)
