@@ -37,7 +37,7 @@ for (let i = 0; i < interns.length; i++) {
         const mainDiv = document.createElement("div");
         mainDiv.setAttribute(
           "class",
-          "flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-blue-50 hover:bg-gray-100 border-2 border-blue-600 rounded-xl shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"
+          "flex flex-col gap-3  bg-blue-50 hover:bg-blue-100 border-2 border-blue-600 rounded-xl shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"
         );
         mainDiv.innerHTML += ` 
         <h3 class="text-center text-blue-600 text-xl font-pacifico">${responseText.name}</h3>
