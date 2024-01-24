@@ -1,7 +1,7 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const l of e)if(l.type==="childList")for(const i of l.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function o(e){const l={};return e.integrity&&(l.integrity=e.integrity),e.referrerPolicy&&(l.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?l.credentials="include":e.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function s(e){if(e.ep)return;e.ep=!0;const l=o(e);fetch(e.href,l)}})();let a=["bearcin46","esakki2104prsnl","mshajid","muthukumarimoorthi","muthuakalya","dineshdevelope","jeya-rosini","swethadsalvatore","Vk2401","suriyamassmsd","riyaz1000","hema-venkat3","mushkir","danielace1","sharif-22","gayathrihg","kishorekumar-kp","vedhatech002"];for(let r=0;r<a.length;r++){let t=new XMLHttpRequest;t.open("GET",` https://api.github.com/users/${a[r]}`,!0),t.onload=function(o){if(t.readyState===4)if(t.status===200){var s=JSON.parse(t.responseText);const e=document.createElement("div");e.setAttribute("class","flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-white rounded-md shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"),e.innerHTML+=` 
-        <h3 class="text-center font-bold">${s.name}</h3>
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const l of e)if(l.type==="childList")for(const o of l.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&r(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const l={};return e.integrity&&(l.integrity=e.integrity),e.referrerPolicy&&(l.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?l.credentials="include":e.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function r(e){if(e.ep)return;e.ep=!0;const l=i(e);fetch(e.href,l)}})();let a=["bearcin46","esakki2104prsnl","mshajid","muthukumarimoorthi","muthuakalya","dineshdevelope","jeya-rosini","swethadsalvatore","Vk2401","suriyamassmsd","riyaz1000","hema-venkat3","mushkir","danielace1","sharif-22","gayathrihg","kishorekumar-kp","vedhatech002"];for(let s=0;s<a.length;s++){let t=new XMLHttpRequest;t.open("GET",` https://api.github.com/users/${a[s]}`,!0),t.onload=function(i){if(t.readyState===4)if(t.status===200){var r=JSON.parse(t.responseText);const e=document.createElement("div");e.setAttribute("class","flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-blue-50 hover:bg-gray-100 border-2 border-blue-600 rounded-xl shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"),e.innerHTML+=` 
+        <h3 class="text-center text-blue-600 text-xl font-pacifico">${r.name}</h3>
         <img
-          src="${s.avatar_url}"
+          src="${r.avatar_url}"
           alt=""
           class="w-28 p-1 h-28 rounded-full  object-cover border-4 border-blue-600"
         />
@@ -20,9 +20,9 @@
               d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
             />
           </svg>
-          <h3 class="font-bold text-blue-600 text-center">User Name</h3>
+          <h3 class=" font-pacifico text-lg text-blue-600 text-center">User Name</h3>
         </div>
-        <h3 class="text-center">${s.login}</h3>
+        <h3 class="text-center font-serif">${r.login}</h3>
       </div>
       <div class="flex gap-3 items-start justify-between">
         <div>
@@ -44,10 +44,10 @@
                 />
               </g>
             </svg>
-            <h3 class="font-bold text-blue-600">Following</h3>
+            <h3 class="font-serif text-lg text-blue-600">Following</h3>
           </div>
 
-          <h3 class="text-center">${s.following}</h3>
+          <h3 class="text-center">${r.following}</h3>
         </div>
 
         <div class="">
@@ -64,20 +64,20 @@
                 d="M11 2.275Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v4.25q-.45-.325-.95-.562T19 11.3V9.1l-3.6 2.075q-1.4.35-2.537 1.188T11 14.4v-1.825L5 9.1v6.85l5.05 2.925q.1.8.375 1.538t.7 1.387q-.05-.025-.062-.038T11 21.726L4 17.7q-.475-.275-.737-.725t-.263-1v-7.95q0-.55.263-1T4 6.3zM12 4L6.075 7.425L12 10.85l5.925-3.425zm5 19q-2.075 0-3.537-1.463T12 18q0-2.075 1.463-3.537T17 13q2.075 0 3.538 1.463T22 18q0 2.075-1.463 3.538T17 23m0-2q.2 0 .35-.15t.15-.35q0-.2-.15-.35T17 20q-.2 0-.35.15t-.15.35q0 .2.15.35T17 21m-.5-2h1v-4h-1z"
               />
             </svg>
-            <h3 class="font-bold text-blue-600">Total Repo</h3>
+            <h3 class="font-serif text-lg text-blue-600">Total Repo</h3>
           </div>
 
-          <h3 class="text-center">${s.public_repos}</h3>
+          <h3 class="text-center">${r.public_repos}</h3>
         </div>
       </div>
       <div class="flex items-center justify-center w-full">
-        <a href="${s.repos_url}" target="_blank" >
+        <a href="${r.repos_url}" target="_blank" >
           <button
-            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 font-bold  text-white rounded-full"
+            class="px-4 py-2 bg-blue-400 hover:bg-blue-700 font-serif  text-white rounded-full"
           >
-           View Repositories
+           View Repo's
           </button>
         </a>
       </div>
     </div>
-      `,document.getElementById("mainContainer").append(e)}else console.error(t.status,t.statusText)},t.onerror=function(o){console.error(t.statusText)},t.send(null)}
+      `,document.getElementById("mainContainer").append(e)}else console.error(t.status,t.statusText)},t.onerror=function(i){console.error(t.statusText)},t.send(null)}

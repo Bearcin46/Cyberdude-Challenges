@@ -37,10 +37,10 @@ for (let i = 0; i < interns.length; i++) {
         const mainDiv = document.createElement("div");
         mainDiv.setAttribute(
           "class",
-          "flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-white rounded-md shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"
+          "flex flex-col bg-lime-100 gap-3 hover:bg-lime-50 bg-blue-50 hover:bg-gray-100 border-2 border-blue-600 rounded-xl shadow-sm shadow-blue-700 items-center justify-between hover:shadow-lg hover:shadow-blue-400 px-8 py-3"
         );
         mainDiv.innerHTML += ` 
-        <h3 class="text-center font-bold">${responseText.name}</h3>
+        <h3 class="text-center text-blue-600 text-xl font-pacifico">${responseText.name}</h3>
         <img
           src="${responseText.avatar_url}"
           alt=""
@@ -61,9 +61,9 @@ for (let i = 0; i < interns.length; i++) {
               d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
             />
           </svg>
-          <h3 class="font-bold text-blue-600 text-center">User Name</h3>
+          <h3 class=" font-pacifico text-lg text-blue-600 text-center">User Name</h3>
         </div>
-        <h3 class="text-center">${responseText.login}</h3>
+        <h3 class="text-center font-serif">${responseText.login}</h3>
       </div>
       <div class="flex gap-3 items-start justify-between">
         <div>
@@ -85,7 +85,7 @@ for (let i = 0; i < interns.length; i++) {
                 />
               </g>
             </svg>
-            <h3 class="font-bold text-blue-600">Following</h3>
+            <h3 class="font-serif text-lg text-blue-600">Following</h3>
           </div>
 
           <h3 class="text-center">${responseText.following}</h3>
@@ -105,7 +105,7 @@ for (let i = 0; i < interns.length; i++) {
                 d="M11 2.275Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v4.25q-.45-.325-.95-.562T19 11.3V9.1l-3.6 2.075q-1.4.35-2.537 1.188T11 14.4v-1.825L5 9.1v6.85l5.05 2.925q.1.8.375 1.538t.7 1.387q-.05-.025-.062-.038T11 21.726L4 17.7q-.475-.275-.737-.725t-.263-1v-7.95q0-.55.263-1T4 6.3zM12 4L6.075 7.425L12 10.85l5.925-3.425zm5 19q-2.075 0-3.537-1.463T12 18q0-2.075 1.463-3.537T17 13q2.075 0 3.538 1.463T22 18q0 2.075-1.463 3.538T17 23m0-2q.2 0 .35-.15t.15-.35q0-.2-.15-.35T17 20q-.2 0-.35.15t-.15.35q0 .2.15.35T17 21m-.5-2h1v-4h-1z"
               />
             </svg>
-            <h3 class="font-bold text-blue-600">Total Repo</h3>
+            <h3 class="font-serif text-lg text-blue-600">Total Repo</h3>
           </div>
 
           <h3 class="text-center">${responseText.public_repos}</h3>
@@ -114,9 +114,9 @@ for (let i = 0; i < interns.length; i++) {
       <div class="flex items-center justify-center w-full">
         <a href="${responseText.repos_url}" target="_blank" >
           <button
-            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 font-bold  text-white rounded-full"
+            class="px-4 py-2 bg-blue-400 hover:bg-blue-700 font-serif  text-white rounded-full"
           >
-           View Repositories
+           View Repo's
           </button>
         </a>
       </div>
