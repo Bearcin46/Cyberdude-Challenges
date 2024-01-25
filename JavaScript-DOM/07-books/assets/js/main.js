@@ -25,7 +25,7 @@ function getBookDetails(data) {
   />
  </div>
 
- <div class="md:mt-2 flex-none ">
+ <div class="md:mt-2 px-2 flex-none ">
    <h3 class="font-bold text-xl">
      Title : <span class="text-lg font-semibold">${givenData.title}</span>
    </h3>
