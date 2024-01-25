@@ -112,7 +112,7 @@ for (let i = 0; i < interns.length; i++) {
         </div>
       </div>
       <div class="flex items-center justify-center w-full">
-        <a href="${responseText.url}" target="_blank" >
+        <a href="${responseText.html_url}" target="_blank" >
           <button
             class="px-4 py-2 bg-blue-400 hover:bg-blue-700 font-serif  text-white rounded-full"
           >
