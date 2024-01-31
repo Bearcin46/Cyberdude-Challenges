@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Bearcin Sweety A",
+    "id": 1,
+    "title": "Full Stack Engineer",
+    "description": "9 months of experience in real time tech environment, Ready to build your next product or join your team remotely.",
+    "contactNo": "+60 1*********",
+    "livesIn": "Penang, Malaysia",
+    "linkedinURL": "/in/bearcinSweety/",
+    "company": "CyberDude Networks Pvt. Ltd",
+    "jobTitle": "Full Stack Engineer Intern",
+    "githubURL": "bearcin46",
+    "workExperience": {
+      "cyberDude": {
+        "startDate": "September - 2023",
+        "endDate": "Present",
+
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap 5",
+          "JavaScript",
+          "Vite",
+          "Tailwind CSS",
+          "React JS"
+        ]
+      }
+    },
+    "education": {
+      "courses": {
+        "course1": {
+          "courseTitle": "FreeCodeCamp.org",
+          "courseDescription": "Successfully completed Responsive Design curriculum at the platform with HTML, CSS & JavaScript",
+          "courseYear": 2020
+        },
+        "course2": {
+          "courseTitle": "Google Analytics Individual Qualification",
+          "courseDescription": "Successfully completed advanced Google Analaytics individual qualification, which helps me to grow my SEO & Analytical skills",
+          "courseYear": 2020
+        },
+        "course3": {
+          "courseTitle": "The Odin Project",
+          "courseDescription": "Followed free research & text-based Full stack javascript curriculum",
+          "courseYear": 2022
+        },
+        "course4": {
+          "courseTitle": "Zero To Mastery",
+          "courseDescription": "Successfully completed Full Stack Development curriculum, and an active alumni to learn new tech stacks and supporting the ZTM community",
+          "courseYear": 2023
+        },
+        "course5": {
+          "courseTitle": "Harvard University CS50X",
+          "courseDescription": "Following introduction to Computer Science curriculum at EDX",
+          "courseYear": 2024
+        }
+      }
+    },
+    "skills": [
+      {
+        "id": 1,
+        "name": "HTML",
+        "percentage": 95
+      },
+      {
+        "id": 2,
+        "name": "CSS",
+        "percentage": 85
+      },
+      {
+        "id": 3,
+        "name": "BOOTSTRAP",
+        "percentage": 85
+      },
+      {
+        "id": 4,
+        "name": "TAILWINDCSS",
+        "percentage": 80
+      },
+      {
+        "id": 5,
+        "name": "JAVASCRIPT",
+        "percentage": 80
+      },
+      {
+        "id": 6,
+        "name": "REACT JS",
+        "percentage": 80
+      },
+      {
+        "id": 7,
+        "name": "MONGO DB",
+        "percentage": 80
+      },
+      {
+        "id": 8,
+        "name": "NODEJS",
+        "percentage": 60
+      }
+    ]
+  }
+]
