@@ -24,7 +24,7 @@ function Posting(props) {
       className="bg-main h-screen flex justify-center items-center"
       key={posts.id}
     >
-      <div className="bg-white rounded-md h-[250px] flex-col w-full max-w-xl mx-auto px-4 py-3 flex justify-center">
+      <div className="bg-white rounded-md h-fit flex-col w-full max-w-xl mx-auto px-6 py-5 flex justify-center">
         <h1 className="text-[#344e41 mb-3 font-bold">{posts.title}</h1>
         <h2>{posts.body}</h2>
         <Link to={"/"}>

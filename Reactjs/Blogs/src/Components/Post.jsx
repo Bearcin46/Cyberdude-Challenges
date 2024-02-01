@@ -29,7 +29,7 @@ function Post() {
     return (
       <Link to={`/Posting/${post.id}`}>
         <div className="md:px-28" key={post.id}>
-          <div className="border-2 px-4 py-3 border-gray-400 w-[90%] shadow-md shadow-gray-400">
+          <div className="border-2 px-4 py-3 border-gray-400 w-[90%] shadow-md mb-3 shadow-gray-400">
             <div className="flex w-full  justify-between">
               <div className="flex gap-4">
                 <div>
@@ -131,7 +131,7 @@ function Post() {
         <h1 className="text-red-800 font-bold mt-10 mb-5 ml-3 text-3xl">
           Latest Blogs
         </h1>
-        <div className="flex flex-col gap-5 justify-center">
+        <div className="flex flex-col gap-10 justify-center">
           <Link to={"/Posting"}>{blogPostbyTemplate}</Link>
         </div>
       </div>
