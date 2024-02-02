@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Message from "./Message";
+import { FormatMyDate } from "./Utils";
 
 const Footer = () => {
   const [message, setMessage] = useState("");
@@ -8,6 +8,8 @@ const Footer = () => {
     e.preventDefault();
     setMessage(e.target.value);
   };
+  // date
+  const time = FormatMyDate(Date.now());
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,7 +40,9 @@ const Footer = () => {
               d="M9 16.17L4.83 12l-1.42 1.41L9 19L21 7l-1.41-1.41L9 16.17z"
             ></path>
           </svg>
-          <small className="text-end text-[10px] text-gray-500">1.15 AM</small>
+          <small className="text-end text-[10px] text-gray-500">
+            {time.toUpperCase()}
+          </small>
         </div>
       </div>
     );

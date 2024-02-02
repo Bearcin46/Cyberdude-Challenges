@@ -10,6 +10,7 @@ const Navbar = () => {
           width="2em"
           height="2em"
           viewBox="0 0 24 24"
+          className="cursor-pointer"
         >
           <path
             fill="#fff"
@@ -20,9 +21,9 @@ const Navbar = () => {
         <img
           src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2022-07/gazali-marimbo-szshvnxh7lq-unsplash.jpg?itok=2Lb4VwIj"
           alt=""
-          className="w-9 h-9 rounded-full "
+          className="w-9 h-9 rounded-full cursor-pointer"
         />
-        <p className="text-white text-lg">My Love❤️</p>
+        <p className="text-white text-lg cursor-pointer">My Love❤️</p>
       </div>
       <div className="flex gap-4 items-center">
         {/* video */}
@@ -31,6 +32,7 @@ const Navbar = () => {
           width="1.85em"
           height="1.85em"
           viewBox="0 0 24 24"
+          className="cursor-pointer"
         >
           <path
             fill="#fff"
@@ -43,6 +45,7 @@ const Navbar = () => {
           width="1.85em"
           height="1.85em"
           viewBox="0 0 24 24"
+          className="cursor-pointer"
         >
           <path
             fill="#fff"
@@ -56,6 +59,7 @@ const Navbar = () => {
           width="1.85em"
           height="1.85em"
           viewBox="0 0 24 24"
+          className="cursor-pointer"
         >
           <path
             fill="#fff"
