@@ -27,7 +27,7 @@ const Mobile = () => {
               ></path>
             </svg>
             <small className="text-xs">
-              Messages and calls are end-toend encryted. N one outside of this
+              Messages and calls are end-toend encryted. No one outside of this
               chat, not even WhatsApp, can read or listen to them.Tap to learn
               more
             </small>

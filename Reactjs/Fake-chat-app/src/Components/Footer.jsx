@@ -22,10 +22,10 @@ const Footer = () => {
     return (
       <div
         key={index}
-        className="bg-yellow-200  px-3 py-2 flex flex-col  rounded-tl-xl rounded-bl-xl rounded-br-xl mb-3"
+        className="bg-yellow-200  px-4 py-2 flex flex-col  rounded-tl-xl rounded-bl-xl rounded-br-xl mb-3"
       >
         <span className="">{msg.message}</span>
-        <div className="flex justify-between items-center">
+        <div className="flex gap-1  items-end justify-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
