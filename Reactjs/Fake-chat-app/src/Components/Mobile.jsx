@@ -5,6 +5,7 @@ import { FormatDate } from "./Dates";
 
 const Mobile = () => {
   const date = FormatDate(Date.now());
+
   return (
     <div className="mx-auto max-w-xl bg-main bg-cover shadow-xl shadow-gray-700 rounded h-screen">
       <Navbar />

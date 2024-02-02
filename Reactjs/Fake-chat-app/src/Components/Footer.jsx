@@ -9,13 +9,13 @@ const Footer = () => {
     setMessage(e.target.value);
   };
   // date
-  const time = FormatMyDate(Date.now());
+  const currentTime = FormatMyDate(Date.now());
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = { message };
     if (message && message !== "") {
-      setFinalmsg((prev) => [...(prev || []), data]);
+      setFinalmsg((prev) => [...(prev || []), { ...data, time: currentTime }]);
       setMessage("");
     }
   };
@@ -24,7 +24,7 @@ const Footer = () => {
     return (
       <div
         key={index}
-        className="bg-yellow-200  px-4 py-2 flex flex-col  rounded-tl-xl rounded-bl-xl rounded-br-xl mb-3"
+        className="bg-yellow-200 cursor-pointer px-4 py-2 max-w-[250px] overflow-hidden flex flex-col  rounded-tl-xl rounded-bl-xl rounded-br-xl mb-3"
       >
         <span className="">{msg.message}</span>
         <div className="flex gap-1  items-end justify-end">
@@ -41,7 +41,7 @@ const Footer = () => {
             ></path>
           </svg>
           <small className="text-end text-[10px] text-gray-500">
-            {time.toUpperCase()}
+            {msg.time}
           </small>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Footer = () => {
                 width="1.75em"
                 height="1.75em"
                 viewBox="0 0 24 24"
-                className="text-gray-400"
+                className="text-gray-400 cursor-pointer hover:text-gray-500"
               >
                 <circle cx="15.5" cy="9.5" r="1.5" fill="currentColor"></circle>
                 <circle cx="8.5" cy="9.5" r="1.5" fill="currentColor"></circle>
@@ -94,7 +94,7 @@ const Footer = () => {
                 width="1.75em"
                 height="1.75em"
                 viewBox="0 0 24 24"
-                className="text-gray-400"
+                className="text-gray-400 hover:text-gray-500 cursor-pointer"
               >
                 <g fill="none" fillRule="evenodd">
                   <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
@@ -111,7 +111,7 @@ const Footer = () => {
                 width="1.75em"
                 height="1.75em"
                 viewBox="0 0 24 24"
-                className="text-gray-400"
+                className="text-gray-400 cursor-pointer hover:text-gray-500"
               >
                 <circle cx="12" cy="12" r="3.2" fill="currentColor"></circle>
                 <path
@@ -121,13 +121,13 @@ const Footer = () => {
               </svg>
             </div>
           </div>
-          <div className="bg-emerald-800  w-14 h-14 rounded-full flex items-center justify-center">
+          <div className="bg-emerald-800 hover:bg-emerald-700 w-14 h-14 rounded-full flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.75em"
               height="1.75em"
               viewBox="0 0 24 24"
-              className="text-white"
+              className="text-white cursor-pointer "
             >
               <path
                 fill="currentColor"
