@@ -5,7 +5,7 @@ function Main() {
   const blogPostByTemplate = jsondata.map((post) => {
     return (
       <div className="flex md:flex-row flex-col justify-between" key={post.id}>
-        <div className="mt-6 flex flex-col gap-3 justify-center">
+        <div className="mt-10 flex flex-col gap-3 justify-center">
           <h1 className="text-white text-4xl ml-4 md:text5xl font-bold">
             {post.name},
           </h1>
@@ -21,9 +21,11 @@ function Main() {
                 Contact
               </button>
             </a>
-            <button className="px-5 py-3 rounded hover:bg-gray-300 text-[#233d4d] bg-white font-bold">
-              Download CV
-            </button>
+            <a href="https://resume.io/r/FnWM79XIF" target="_blank">
+              <button className="px-5 py-3 rounded hover:bg-gray-300 text-[#233d4d] bg-white font-bold">
+                Download CV
+              </button>
+            </a>
           </div>
           {/* icons */}
           <div className=" ml-3 mt-4 flex  gap-3">
