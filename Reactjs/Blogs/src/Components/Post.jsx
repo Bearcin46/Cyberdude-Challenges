@@ -29,7 +29,7 @@ function Post() {
     return (
       <Link to={`/Posting/${post.id}`}>
         <div className="md:px-28" key={post.id}>
-          <div className="border-2 px-4 py-3 border-gray-400 w-[90%] shadow-md mb-3 shadow-gray-400">
+          <div className="border-2 px-4 hover:bg-gray-100 py-3 border-gray-400 w-[90%] shadow-md mb-3 shadow-gray-400">
             <div className="flex w-full  justify-between">
               <div className="flex gap-4">
                 <div>

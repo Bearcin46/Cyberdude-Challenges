@@ -16,9 +16,11 @@ function Main() {
             {post.description}
           </p>
           <div className="ml-4 flex gap-4 mt-4">
-            <button className="px-5 py-3 rounded bg-[#233d4d] text-white font-bold">
-              Contact
-            </button>
+            <a href="tel:+60-166050498">
+              <button className="px-5 py-3 rounded bg-[#233d4d] text-white font-bold">
+                Contact
+              </button>
+            </a>
             <button className="px-5 py-3 rounded hover:bg-gray-300 text-[#233d4d] bg-white font-bold">
               Download CV
             </button>
@@ -32,6 +34,7 @@ function Main() {
                 width="1.5em"
                 height="1.5em"
                 viewBox="0 0 24 24"
+                className="hover:text-orange-400"
               >
                 <path
                   fill="currentColor"
@@ -47,6 +50,7 @@ function Main() {
                 width="1.5em"
                 height="1.5em"
                 viewBox="0 0 24 24"
+                className="hover:text-green-400"
               >
                 <path
                   fill="currentColor"
@@ -62,6 +66,7 @@ function Main() {
                 width="1.5em"
                 height="1.5em"
                 viewBox="0 0 24 24"
+                className="hover:text-[#3b82f6]"
               >
                 <path
                   fill="currentColor"
