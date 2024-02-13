@@ -1,96 +1,36 @@
-import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import Input from "./Components/Input";
 import TextArea from "./Components/TextArea";
 import InputNumber from "./Components/InputNumber";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
+const formSchema = z.object({
+  fullName: z
+    .string()
+    .min(3, { message: "Name must be at least 3 characters" })
+    .max(20, { message: "Name must be at most 20 characters" }),
+  phone: z
+    .string()
+    .min(10, { message: "Phone number must be 10 digits" })
+    .max(10, { message: "Phone number must be 10 digits" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  message: z
+    .string()
+    .min(20, { message: "Message must be at least 20 characters" })
+    .max(200, { message: "Message must be at most 200 characters" }),
+});
 
 const Form = () => {
-  const [formVal, setFormVal] = useState({
-    fullName: "",
-    email: "",
-    message: "",
-    phone: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: zodResolver(formSchema) });
 
-  const [errmsg, seterrmsg] = useState({
-    fullName: null,
-    email: null,
-    phone: null,
-    message: null,
-  });
-
-  const handleInputs = (e) => {
-    const { name, value } = e.target;
-
-    // =================================name error=======================================================
-    if (name === "fullName") {
-      if (value.length < 4 || value.length > 20) {
-        seterrmsg((pre) => ({
-          ...pre,
-          fullName: "Full name should contain 4 to 20 characters",
-        }));
-      } else {
-        seterrmsg((pre) => ({
-          ...pre,
-          fullName: "",
-        }));
-      }
-    }
-
-    //===================================mobile no. error=================================================
-    if (name === "phone") {
-      if (value.length < 10 || value.length > 10) {
-        seterrmsg((pre) => ({
-          ...pre,
-          phone: "Mobile number should contain 10 digits",
-        }));
-      } else {
-        seterrmsg((pre) => ({
-          ...pre,
-          phone: "",
-        }));
-      }
-    }
-    //=====================================message error===========================================================
-    if (name === "message") {
-      if (value.length < 10) {
-        seterrmsg((pre) => ({
-          ...pre,
-          message: "Please message us briefly",
-        }));
-      } else {
-        seterrmsg((pre) => ({
-          ...pre,
-          message: "",
-        }));
-      }
-    }
-    //=========================================email error===========================================
-
-    if (name === "email") {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(value)) {
-        seterrmsg((pre) => ({
-          ...pre,
-          email: "Please enter a valid email address",
-        }));
-      } else {
-        seterrmsg((pre) => ({
-          ...pre,
-          email: "",
-        }));
-      }
-    }
-
-    setFormVal((previousVal) => ({
-      ...previousVal,
-      [name]: value,
-    }));
-  };
-  const handleForm = (e) => {
-    e.preventDefault();
-    alert(`Thank you ${formVal.fullName}! , We'll get back to you soon... `);
-    console.log(formVal);
-    setFormVal({ fullName: "", email: "", message: "", phone: "" });
+  const sendInfo = (data) => {
+    console.log("Sending this info to the server: ", data);
+    alert("Thank you for response, we'll get back to you soon");
   };
 
   return (
@@ -100,7 +40,7 @@ const Form = () => {
       </h1>
       <form
         className="flex justify-center  gap-5 flex-col"
-        onSubmit={handleForm}
+        onSubmit={handleSubmit(sendInfo)}
       >
         {/* name */}
         <div className="flex flex-col  gap-2 relative">
@@ -109,14 +49,11 @@ const Form = () => {
           </label>
           <Input
             name="fullName"
-            value={formVal.fullName}
             placeholder={"Enter your name"}
-            handleOnChange={handleInputs}
-            required={true}
+            register={register("fullName")}
+            error={errors.fullName}
+            required
           />
-          <small className="absolute left-1 bottom-[-18px] text-xs font-semibold text-red-800 ">
-            {errmsg.fullName}
-          </small>
         </div>
 
         {/* phone */}
@@ -126,14 +63,11 @@ const Form = () => {
           </label>
           <InputNumber
             name="phone"
-            value={formVal.phone}
             placeholder={"Enter your mobile number"}
-            handleOnChange={handleInputs}
-            required={true}
+            register={register("phone")}
+            error={errors.phone}
+            required
           />
-          <small className="absolute left-1 bottom-[-18px] text-xs font-semibold text-red-800 ">
-            {errmsg.phone}
-          </small>
         </div>
 
         {/* email */}
@@ -143,14 +77,11 @@ const Form = () => {
           </label>
           <Input
             name="email"
-            value={formVal.email}
             placeholder={"Enter your mail address"}
-            handleOnChange={handleInputs}
-            required={true}
+            register={register("email")}
+            error={errors.email}
+            required
           />
-          <small className="absolute left-1 bottom-[-18px] text-xs font-semibold text-red-800 ">
-            {errmsg.email}
-          </small>
         </div>
 
         {/* text */}
@@ -160,14 +91,11 @@ const Form = () => {
           </label>
           <TextArea
             name="message"
-            value={formVal.message}
             placeholder="Enter your Message"
-            handleOnChange={handleInputs}
-            required={true}
+            register={register("message")}
+            error={errors.message}
+            required
           />
-          <small className="absolute left-1 bottom-[-18px] text-xs font-semibold text-red-800 ">
-            {errmsg.message}
-          </small>
         </div>
 
         {/* button */}

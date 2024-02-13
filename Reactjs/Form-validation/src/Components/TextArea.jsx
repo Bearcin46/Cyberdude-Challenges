@@ -1,26 +1,31 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const TextArea = ({ name, placeholder, value, handleOnChange, required }) => {
+const TextArea = ({ name, placeholder, register, error }) => {
   return (
-    <textarea
-      id={name}
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleOnChange}
-      required={required}
-      cols="30"
-      rows="4"
-      className="bg-green-200 px-3 py-2 rounded focus:outline-none"
-    ></textarea>
+    <div>
+      <textarea
+        name={name}
+        placeholder={placeholder}
+        {...register}
+        required
+        cols="30"
+        rows="4"
+        className="bg-green-200 w-full px-3 py-2 rounded focus:outline-none"
+      ></textarea>
+      {error && (
+        <small className="absolute left-1 bottom-[-18px] text-xs font-semibold text-red-800 ">
+          {error.message}
+        </small>
+      )}
+    </div>
   );
 };
 TextArea.propTypes = {
   name: PropTypes.string,
   value: PropTypes.string,
   placeholder: PropTypes.string,
-  handleOnChange: PropTypes.func,
-  required: PropTypes.bool,
+  register: PropTypes.object,
+  error: PropTypes.object,
 };
 export default TextArea;
